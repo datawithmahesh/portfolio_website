@@ -11,7 +11,7 @@ export const socials: Social[] = [
 // EDIT FROM HERE
 
 
-export const desc= 'Cybersecurity Analyst';
+export const desc= 'Enthusiastic Data Scientist and machine Learning Engineer';
 export const logo = '/logo.jpg'; // place logo.svg in /public
 export const profile = '/profile.jpg'; // place profile.jpg in /public
 export const name = 'Mahesh Bahadur Thapa';
@@ -26,7 +26,7 @@ I am a Computer Engineer and Enthusiastic Data Scientist
 export const contact: Contact = {
   email: 'maheshthapa3150@gmail.com',
   phone: '+977-9840776800',
-  website: 'https://jagatsaund.com.np',
+  website: 'https://maheshbahadurthapa.com.np',
   location: 'Kathmandu, Nepal',
 };
 
@@ -51,12 +51,84 @@ export const seo: Seo = {
 // -------------------------
 // Skills
 // -------------------------
-export const skills: Skill[] = [
-  { name: 'Pandas', category: 'Data Analysis', level: 'Advanced', years: 0.5 },
-  { name: 'SQL', category: 'Data Analyst', level: 'Advanced', years: 0.5 },
-  {name: 'Excel', category: 'Data Analyst', level: 'Beginner', years:0.5},
-  { name: 'Machine Learning', category: 'Data Science', level: 'Intermediate', years: 2 },
+type SkillCategory = {
+  category: string;
+  skills: string[];
+};
+
+export const skillsByCategory: SkillCategory[] = [
+  {
+    category: 'Data Analysis',
+    skills: [
+      'Excel',
+      'SQL',
+      'MySQL',
+      'Python',
+      'Pandas',
+      'NumPy',
+      'Matplotlib',
+      'Seaborn',
+      'Plotly',
+      'Tableau',
+      'Power BI'
+    ],
+  },
+  {
+    category: 'Data Science',
+    skills: [
+      'Statistics',
+      'Probability',
+      'Hypothesis Testing',
+      'Exploratory Data Analysis (EDA)',
+      'Data Cleaning & Preprocessing',
+      'Machine Learning Fundamentals',
+      'Natural Language Processing (NLP)',
+      'Text Classification',
+      'Clustering',
+      'Dimensionality Reduction',
+      'Model Evaluation & Validation'
+    ],
+  },
+  {
+    category: 'Machine Learning',
+    skills: [
+      'Supervised Learning: Regression, Classification (Logistic, Decision Trees, SVM, Random Forest)',
+      'Unsupervised Learning: Clustering (K-Means), PCA',
+      'Neural Networks',
+      'Reinforcement Learning',
+      'Time Series Forecasting'
+    ],
+  },
+  {
+    category: 'Tools & Frameworks',
+    skills: [
+      'Scikit-learn',
+      'FastAPI',
+      'Streamlit',
+      'Jupyter Notebook',
+      'Google Colab',
+      'VS Code',
+      'Git & GitHub'
+    ],
+  },
+
+  {
+    category: "Soft Skills",
+    skills: [
+      "Problem-Solving & Critical Thinking",
+      "Curiosity & Continuous Learning",
+      "Analytical Thinking",
+      "Attention to Detail",
+      "Communication Skills",
+      "Storytelling with Data",
+      "Collaboration & Teamwork",
+      "Adaptability & Flexibility",
+      "Time Management & Organization",
+      "Ethical Thinking in AI & Data"
+    ],
+  },
 ];
+
 
 export interface Certification {
   id: string;
@@ -95,26 +167,26 @@ export const certifications: Certification[] = [
 // -------------------------
 export const projects: Project[] = [
 
-  // {
-  //   id: 'project-pentest-lab',
-  //   title: 'Pentest Lab Automation',
-  //   slug: 'pentest-lab',
-  //   shortDescription: 'Automation scripts and Vagrant setups to create reproducible pentest labs for training.',
-  //   images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTYlslbm-HoOgl-lgR2pSaoR7ZV-dmEZWZ4A&s', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-xripvZnkOB_lg58VHa5KuDHZ_n9nz0puAw&s'],
-  //   repoUrl: 'https://github.com/your-username/pentest-lab',
-  //   tech: ['Bash', 'Vagrant', 'Docker', 'Ansible'],
-  //   year: 2023,
-  // },
-  // {
-  //   id: 'project-portfolio',
-  //   title: 'This Portfolio (Starter)',
-  //   slug: 'portfolio',
-  //   shortDescription: "This Next.js + TypeScript portfolio template you're using right now.",
-  //   images: ['/projects/portfolio-1.png'],
-  //   repoUrl: 'https://github.com/your-username/portfolio',
-  //   tech: ['Next.js', 'TypeScript', 'Tailwind'],
-  //   year: 2025,
-  // },
+  {
+    id: '1',
+    title: 'CAFE MANAGEMENT SYSTEM',
+    slug: 'CAFE-MANAGEMENT-SYSTEM',
+    shortDescription: 'Desktop application that connects the kitchen department with counter and manages orders of the customers and generates bills.',
+    images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTYlslbm-HoOgl-lgR2pSaoR7ZV-dmEZWZ4A&s', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-xripvZnkOB_lg58VHa5KuDHZ_n9nz0puAw&s'],
+    repoUrl: 'https://github.com/datawithmahesh/CAFE-MANAGEMENT-SYSTEM/tree/main/CAFEMANAGEMENT',
+    tech: ['SQL', 'C#.NET'],
+    // year: 2021,
+  },
+  {
+    id: '2',
+    title: 'MOBILE SALES AND CUSTOMER MANAGEMENT SYSTEM',
+    slug: 'MOBILE-SALES-AND-CUSTOMER-MANAGEMENT-SYSTEM',
+    shortDescription: "Tracks the purchase and sales history of any mobile shop with its stock level update.",
+    images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTYlslbm-HoOgl-lgR2pSaoR7ZV-dmEZWZ4A&s', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-xripvZnkOB_lg58VHa5KuDHZ_n9nz0puAw&s'],
+    repoUrl: 'https://github.com/datawithmahesh/MOBILE-SALES-AND-CUSTOMER-MANAGEMENT-SYSTEM/tree/main/Mobile_Sales_and_Customer_Management_System',
+    tech: ['MySQL', 'Hibernate', 'Java', 'Spring Boot'],
+    // year: 2025,
+  },
 ];
 
 // -------------------------
@@ -329,7 +401,7 @@ const myDetail = {
   seo,
   navLinks,
   desc,
-  skills,
+  skillsByCategory,
   projects,
   experiences,
   certifications,
