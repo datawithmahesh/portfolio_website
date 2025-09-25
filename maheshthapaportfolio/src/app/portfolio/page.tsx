@@ -78,7 +78,7 @@ export default function ProjectsPage() {
               <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-600 mb-2">{project.shortDescription}</p>
               <p className="text-gray-400 text-sm mb-4">
-                {project.tech?.join(" • ")} • {project.year}
+                {project.tech?.join(" • ")}
               </p>
 
               <div className="flex gap-4 flex-wrap">
