@@ -15,12 +15,14 @@ export const desc= 'Enthusiastic Data Scientist and machine Learning Engineer';
 export const logo = '/logo.jpg'; // place logo.svg in /public
 export const profile = '/profile.jpg'; // place profile.jpg in /public
 export const name = 'Mahesh Bahadur Thapa';
-export const tagline = 'Computer Engineer · Enthusiastic Data Scientist';
-export const homeDesc='I am a Computer Engineer and Enthusiastic Data Scientist '
+export const tagline = 'Computer Engineer · Enthusiastic Data Scientist/Machine Learning Engineer';
+export const homeDesc='With an open mind and a strong will to grow, I aim to create things that inspire and add value. I’m constantly learning, refining, and striving to make a positive mark.'
 
 export const about = `
-I am a Computer Engineer and Enthusiastic Data Scientist 
-`;
+I’m a Computer Engineer with a growing passion for Data Science, Machine Learning, and Analytical problem-solving.
+I enjoy exploring data-driven insights, building intelligent solutions, and continuously improving my technical and analytical skills.
+My goal is to combine curiosity and technology to create meaningful outcomes that make an impact.
+ `;
 
 
 export const contact: Contact = {
