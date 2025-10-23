@@ -71,8 +71,7 @@ export const skillsByCategory: SkillCategory[] = [
       'Matplotlib',
       'Seaborn',
       'Plotly',
-      'Tableau',
-      'Power BI'
+      'Tableau'
     ],
   },
   {
@@ -189,6 +188,72 @@ export const projects: Project[] = [
     tech: ['MySQL', 'Hibernate', 'Java', 'Spring Boot'],
     // year: 2025,
   },
+  {
+    id: '3',
+    title: 'TWITTER SENTIMENT ANALYSIS MODEL',
+    slug: 'TWITTER SENTIMENT ANALYSIS MODEL',
+    shortDescription: 'This project aims to classify tweets into positive, negative, or neutral sentiments using machine learning.It was developed as a mini data science project to practice NLP techniques and model deployment using Streamlit..',
+    images: ['/twitter.jpg'],
+    repoUrl: 'https://github.com/datawithmahesh/twitter_training_sentiment_model',
+    website_link:'https://twitterdatasentimentmodel.streamlit.app/',
+    tech: ['PYTHON','Streamlit', 'Pandas', 'NumPy', 'Scikit-Learn', 'Matplotlib', 'Seaborn', 'NLTK', 'Streamlit Cloud'],
+    // year: 2021,
+  },  
+  {
+    id: '4',
+    title: 'EMPLOYEE SALARY PREDICTION MODEL',
+    slug: 'EMPLOYEE SALARY PREDICTION MODEL',
+    shortDescription: 'This project predicts employee salaries based on various factors such as experience, education, and role using machine learning regression techniques.',
+    images: ['/salary.jpg'],
+    repoUrl: 'https://github.com/datawithmahesh/Salary_regression',
+    website_link:'https://employeesalaryregression.streamlit.app/',
+    tech: ['PYTHON','Streamlit', 'Pandas', 'NumPy','Jupyter Notebook', 'Scikit-Learn', 'Matplotlib', 'Seaborn', 'NLTK', 'Streamlit Cloud'],
+    // year: 2021,
+  },
+  {
+    id: '5',
+    title: 'LOAN APPROVAL CLASSIFICATION MODEL',
+    slug: 'LOAN APPROVAL CLASSIFICATION MODEL',
+    shortDescription: 'A machine learning project designed to classify whether a loan application will be approved or not based on applicant information such as income, home ownership, loan amount, loan intent, interest rate, and credit-related details. The model was built using Support Vector Machine (SVM) for binary classification.',
+    images: ['/loan.jpg'],
+    repoUrl: 'https://github.com/datawithmahesh/loan_classification',
+    website_link:'https://loandataclassification.streamlit.app/',
+    tech: ['PYTHON','Streamlit', 'Pandas', 'NumPy', 'Jupyter Notebook','Scikit-Learn', 'Matplotlib', 'Seaborn', 'NLTK', 'Streamlit Cloud'],
+    // year: 2021,
+  },
+  {
+    id: '6',
+    title: 'COVID-19 Classification Model',
+    slug: 'COVID-19 Classification Model',
+    shortDescription: 'This project predicts whether an individual is COVID-19 positive or negative based on symptoms such as cough, fever, sore throat, headache, and known contact history. The model was built using Support Vector Machine (SVM)',
+    images: ['/covid.jpg'],
+    repoUrl: 'https://github.com/datawithmahesh/Covid_Classification',
+    website_link:'https://classificationcovidmvp.streamlit.app/',
+    tech: ['PYTHON','Streamlit', 'Pandas', 'NumPy', 'Jupyter Notebook','Scikit-Learn', 'Matplotlib', 'Seaborn', 'SVM','NLTK', 'Streamlit Cloud'],
+    // year: 2021,
+  },
+  {
+    id: '7',
+    title: 'BBC NEWS TEXT CLASSIFICATION MODEL',
+    slug: 'BBC NEWS TEXT CLASSIFICATION MODEL',
+    shortDescription: 'This project classifies BBC news articles into categories such as business, tech, politics, sport, and entertainment using Logistic Regression and TF-IDF vectorization. It applies advanced NLP preprocessing like stopword removal, stemming, and text cleaning to achieve accurate news topic prediction.',
+    images: ['/text_data.jpg'],
+    repoUrl: 'https://github.com/datawithmahesh/BBC_text_data_news_classification',
+    website_link:'https://newsclassificationtextdata.streamlit.app/',
+    tech: ['PYTHON','Streamlit', 'Pandas', 'NumPy', 'Jupyter Notebook','Scikit-Learn', 'Matplotlib', 'TF-IDF','Seaborn', 'NLTK', 'Streamlit Cloud'],
+    // year: 2021,
+  },
+  {
+    id: '8',
+    title: 'EMPLOYEE SALARY CLUSTERING MODEL',
+    slug: 'BBC NEWS TEXT CLASSIFICATION MODEL',
+    shortDescription: 'This project groups employees into distinct clusters based on their age, years of experience, education level, and salary using Principal Component Analysis (PCA) and K-Means clustering. It helps visualize and understand hidden salary patterns among employees with similar profiles.',
+    images: ['/PCA_salary.jpg'],
+    repoUrl: 'https://github.com/datawithmahesh/PCA_clustering_salary_data',
+    website_link:'https://pcaclusteringsalarydata.streamlit.app/',
+    tech: ['PYTHON','Streamlit', 'Pandas', 'NumPy', 'Jupyter Notebook','Scikit-Learn', 'Matplotlib', 'Seaborn', 'NLTK', 'Streamlit Cloud','PCA', 'K-Means'],
+    // year: 2021,
+  },
 ];
 
 // -------------------------
@@ -252,10 +317,17 @@ export const education: Education[] = [
     location: 'Dhangadhi, Nepal',
     university:'Pokhara University',
     degree: 'B.E. Computer Engineering',
-    startDate: '2018',
-    endDate: '2024',
-    description: 'Focused on systems, networks and security-related coursework.',
+    // startDate: '2018',
+    endDate: '2024 AD',
+    description: 'My journey at NAST College was filled with learning, teamwork, and hands-on exploration of technology.I worked on several projects, organized college functions, and developed strong presentation and leadership skills along the way.These experiences shaped my confidence, creativity, and curiosity to keep learning and building meaningful things.',
   },
+
+
+
+
+
+
+
   //   {
   //   id: 'edu-isc',
   //   school:'National Academy of Science and Technology',
@@ -329,6 +401,8 @@ export interface Project {
   images?: string[]; // paths relative to /public
   demoUrl?: string;
   repoUrl?: string;
+  website_link?: string;   
+  // new thapeko hai ta   
   tech?: string[];
   year?: number;
   featured?: boolean;

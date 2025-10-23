@@ -100,6 +100,15 @@ export default function ProjectsPage() {
                     Code
                   </Link>
                 )}
+                {project.website_link && (
+                  <Link
+                    href={project.website_link}
+                    target="_blank"
+                    className="px-4 py-2 bg-gray-200 text-black rounded-full font-medium shadow hover:bg-gray-300 transition"
+                  >
+                    site_link
+                  </Link>
+                )}
               </div>
             </div>
           </motion.div>
