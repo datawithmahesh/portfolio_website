@@ -282,36 +282,37 @@ export const projects: Project[] = [
 // Experience
 // -------------------------
 export const experiences: Experience[] = [
-  // {
-  //   id: 'exp-jyoti-bank-isa',
-  //   role: 'Information Security Analyst (Junior Assistant)',
-  //   company: 'Jyoti Bikash Bank Ltd.',
-  //   startDate: '2025-01-06',
-  //   endDate: 'Present',
-  //   location: 'Kathmandu, Nepal',
-  //   description:
-  //     'Working on day-to-day monitoring, SOC alerts triage, assisting with compliance and vulnerability management.',
-  //   bullets: [
-  //     'Triage security alerts and create incident tickets',
-  //     'Perform periodic vulnerability scans and report findings',
-  //     'Assist with security awareness activities for staff',
-  //   ],
-  // },
-  // {
-  //   id: 'exp-intern-cyber',
-  //   role: 'Cybersecurity Intern',
-  //   company: 'TechSecure Pvt. Ltd.',
-  //   startDate: '2024-06-01',
-  //   endDate: '2024-12-31',
-  //   location: 'Kathmandu, Nepal',
-  //   description:
-  //     'Worked on penetration testing, vulnerability assessments, and automation scripts for internal security projects.',
-  //   bullets: [
-  //     'Conducted network vulnerability scans using Nmap and Nessus',
-  //     'Prepared security reports for management',
-  //     'Assisted in implementing SIEM dashboards (Wazuh)',
-  //   ],
-  // },
+  {
+    id: '1',
+    role: 'Customer Service Representative and Quality Assurance',
+    company: 'Daraz Nepal',
+    startDate: 'Jan 2024',
+    endDate: 'March 2024',
+    location: 'Kathmandu, Nepal',
+    description:
+      'Delivered exceptional customer support and ensured process quality at Daraz Nepal, developing strong communication, problem-solving, and multitasking skills in a fast-paced environment.',
+    bullets: [
+      'Resolved customer queries with professionalism and care.',
+      'Strengthened communication and interpersonal skills.',
+      'Managed tasks efficiently under pressure.',
+      'Developed confidence in problem-solving and customer understanding.',
+    ],
+  },
+  {
+    id: '2',
+    role: 'Computer Science Lecturer',
+    company: 'NASA National Secondary School',
+    startDate: 'May 2024',
+    endDate: 'Jun 2025',
+    location: 'Kathmandu, Nepal',
+    description:
+      'Taught computer science concepts and practical coding sessions, inspiring students to think critically, solve problems, and innovate through technology.',
+    bullets: [
+      'Delivered engaging lessons on coding and digital tools.',
+      'Fostered creativity and problem-solving in learning.',
+      'Encouraged curiosity and innovation in the classroom.',
+    ],
+  },
   //     {
   //   id: 'exp-jyoti-bank-isa3',
   //   role: 'Information Security Analyst (Junior Assistant)',
