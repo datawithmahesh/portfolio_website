@@ -139,20 +139,20 @@ export interface Certification {
   credentialUrl?: string;
 }
 export const certifications: Certification[] = [
-  // {
-  //   id: '1',
-  //   title: 'Introduction to Cybersecurity',
-  //   issuer: 'CISCO Networking Academy',
-  //   date: '2025-09',
-  //   credentialUrl: 'https://drive.google.com/file/d/1eryC_9r_xx7-o26UausS5JYeuw9UFe8L/view?usp=sharing',
-  // },
-  //   {
-  //   id: '2',
-  //   title: 'Cybersecurity Basics',
-  //   issuer: 'Cybrary',
-  //   date: '2025-08',
-  //   credentialUrl: 'https://drive.google.com/file/d/1SG6y7g48RRwl_pn_5iRebtS_YdG0nPfu/view?usp=sharing',
-  // },
+  {
+    id: '1',
+    title: 'Data Science with Python',
+    issuer: 'BROADWAY INFOSYS',
+    date: '11th May, 2025 - 11th Aug, 2025',
+    credentialUrl: 'https://drive.google.com/file/d/1bqnhY5uQK-J62wG4vL0W5D-oRFHjmPbn/view?usp=sharing',
+  },
+    {
+    id: '2',
+    title: 'Data Analytics BootCamp',
+    issuer: 'AlexTheAnalyst',
+    date: '5th Aug, 2025 - 5th Nov, 2025',
+    credentialUrl: 'https://drive.google.com/file/d/1gKR3tiDZIVOl9nlusnd7OxeKIv1CeYM-/view?usp=sharing',
+  },
   // {  
   // id: '3',
   //   title: 'Ethical Hacker',
