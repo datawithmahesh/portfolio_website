@@ -34,7 +34,7 @@ export const contact: Contact = {
 
 
 
-export const resumeUrl = 'https://drive.google.com/file/d/1eeOYX60y5udvg1derv6YkXtK4avQREDp/view?usp=sharing'; // place resume.pdf in /public or use external URL
+export const resumeUrl = 'https://drive.google.com/file/d/1G53gcDBvkddaZ3wJCtqlhJ2DzAE_p5yO/view?usp=sharing'; // place resume.pdf in /public or use external URL
 
 // -------------------------
 // SEO
